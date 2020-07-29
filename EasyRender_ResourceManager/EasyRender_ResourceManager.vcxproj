@@ -77,21 +77,29 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(NETFXKitsDir)Lib\um\x86;D:\qianxin_code\public\lib;D:\qianxin_code\public\lib\boost\1.61.0;D:\qianxin_code\public\lib\Qt\Qt5.6.0\lib\windows\x86;D:\qianxin_code\public\lib\CEF_3.2623.1401.gb90a3be_windows32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(NETFXKitsDir)Lib\um\x86;D:\qianxin_code\public\lib;D:\qianxin_code\public\lib\boost\1.61.0;D:\qianxin_code\public\lib\Qt\Qt5.6.0\lib\windows\x86;D:\qianxin_code\public\lib\CEF_3.2623.1401.gb90a3be_windows32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
