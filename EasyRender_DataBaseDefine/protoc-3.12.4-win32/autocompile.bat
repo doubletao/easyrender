@@ -1,0 +1,2 @@
+for %%i in (%~dp0\..\protocoldefine\*.proto) do ( %~dp0\bin\protoc.exe -I=%~dp0\..\protocoldefine\ --cpp_out=%~dp0\..\protocolclass %%i )
+copy %~dp0\..\protocolclass\*.h %~dp0\..\..\Include\DataBaseDefine\
