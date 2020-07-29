@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="protocoldefine">
+      <UniqueIdentifier>{fd08b9b8-babc-4eff-98a0-91090d5e864c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocolclass">
+      <UniqueIdentifier>{4758dc20-6daf-4ce2-8cc5-045b39554adb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -23,6 +29,9 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="protocolclass\resource.pb.cc">
+      <Filter>protocolclass</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +47,9 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="protocolclass\resource.pb.h">
+      <Filter>protocolclass</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="EasyRender_DataBaseDefine.def">
@@ -45,6 +57,9 @@
     </None>
     <None Include="res\EasyRender_DataBaseDefine.rc2">
       <Filter>资源文件</Filter>
+    </None>
+    <None Include="protocoldefine\resource.proto">
+      <Filter>protocoldefine</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

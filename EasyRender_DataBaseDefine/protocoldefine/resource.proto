@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+package easy_render.resource;
+
+message FileInfo {
+    string guid=1;			//全局唯一标志符
+	string md5=2;			//文件MD5
+    string file_path=3;		//文件路径
+	int64 file_size=4;		//文件size
+}
+
+message ResourceManager{
+	map<string, FileInfo> resource_map = 1;		//guid为key，FileInfo为value
+}
