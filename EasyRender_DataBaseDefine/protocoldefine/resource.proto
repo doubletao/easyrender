@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-package easy_render.resource;
+package EasyRender;
 
 message FileInfo {
     string guid=1;			//全局唯一标志符
