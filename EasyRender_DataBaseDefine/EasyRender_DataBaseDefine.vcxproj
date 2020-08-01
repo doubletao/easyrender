@@ -77,15 +77,15 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(NETFXKitsDir)Lib\um\x86;D:\qianxin_code\public\lib;D:\qianxin_code\public\lib\boost\1.61.0;D:\qianxin_code\public\lib\Qt\Qt5.6.0\lib\windows\x86;D:\qianxin_code\public\lib\CEF_3.2623.1401.gb90a3be_windows32;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(NETFXKitsDir)Lib\um\x86;D:\qianxin_code\public\lib;D:\qianxin_code\public\lib\boost\1.61.0;D:\qianxin_code\public\lib\Qt\Qt5.6.0\lib\windows\x86;D:\qianxin_code\public\lib\CEF_3.2623.1401.gb90a3be_windows32;$(LibraryPath);$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
@@ -93,15 +93,15 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(NETFXKitsDir)Lib\um\x86;D:\qianxin_code\public\lib;D:\qianxin_code\public\lib\boost\1.61.0;D:\qianxin_code\public\lib\Qt\Qt5.6.0\lib\windows\x86;D:\qianxin_code\public\lib\CEF_3.2623.1401.gb90a3be_windows32;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(NETFXKitsDir)Lib\um\x86;D:\qianxin_code\public\lib;D:\qianxin_code\public\lib\boost\1.61.0;D:\qianxin_code\public\lib\Qt\Qt5.6.0\lib\windows\x86;D:\qianxin_code\public\lib\CEF_3.2623.1401.gb90a3be_windows32;$(LibraryPath);$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\Include\;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\..\lib\$(Configuration)\$(PlatformTarget)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>

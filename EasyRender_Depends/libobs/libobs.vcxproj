@@ -28,14 +28,14 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v140_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
@@ -77,28 +77,28 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSdk_71A_IncludePath);E:\lanxindev\WTL91_5321_Final;E:\lanxindev\LanxinPublic\include;E:\lanxindev\LanxinPublic\include\boost_1_61_0;E:\lanxindev\LanxinPublic\include\Qt\Qt5.6.0;E:\lanxindev\LanxinPublic\include\cef\CEF_3.2623.1401.gb90a3be_windows32</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\lib\Depends\$(PlatformTarget)\;$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;E:\lanxindev\LanxinPublic\lib;E:\lanxindev\LanxinPublic\lib\boost\1.61.0;E:\lanxindev\LanxinPublic\lib\Qt\Qt5.6.0\lib\windows\x86;E:\lanxindev\LanxinPublic\lib\CEF_3.2623.1401.gb90a3be_windows32</LibraryPath>
+    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSdk_71A_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\Depends\$(PlatformTarget)\;$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;E:\lanxindev\LanxinPublic\lib;E:\lanxindev\LanxinPublic\lib\boost\1.61.0;E:\lanxindev\LanxinPublic\lib\Qt\Qt5.6.0\lib\windows\x86;E:\lanxindev\LanxinPublic\lib\CEF_3.2623.1401.gb90a3be_windows32;$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSDK_IncludePath);;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\..\lib\Depends\$(PlatformTarget)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSdk_71A_IncludePath);E:\lanxindev\WTL91_5321_Final;E:\lanxindev\LanxinPublic\include;E:\lanxindev\LanxinPublic\include\boost_1_61_0;E:\lanxindev\LanxinPublic\include\Qt\Qt5.6.0;E:\lanxindev\LanxinPublic\include\cef\CEF_3.2623.1401.gb90a3be_windows32</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\lib\Depends\$(PlatformTarget)\;$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;E:\lanxindev\LanxinPublic\lib;E:\lanxindev\LanxinPublic\lib\boost\1.61.0;E:\lanxindev\LanxinPublic\lib\Qt\Qt5.6.0\lib\windows\x86;E:\lanxindev\LanxinPublic\lib\CEF_3.2623.1401.gb90a3be_windows32</LibraryPath>
+    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSdk_71A_IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\lib\Depends\$(PlatformTarget)\;$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;E:\lanxindev\LanxinPublic\lib;E:\lanxindev\LanxinPublic\lib\boost\1.61.0;E:\lanxindev\LanxinPublic\lib\Qt\Qt5.6.0\lib\windows\x86;E:\lanxindev\LanxinPublic\lib\CEF_3.2623.1401.gb90a3be_windows32;$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(ProjectDir)..\tmp\$(ProjectName)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSDK_IncludePath);</IncludePath>
+    <IncludePath>$(SolutionDir)..\..\EasyRender_Depends\libobs-opengl\libobs-opengl\;$(SolutionDir)..\..\EasyRender_Depends\libobs-d3d11\libobs-d3d11\;$(SolutionDir)..\..\EasyRender_Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)..\..\EasyRender_Depends\libobs\libobs\;$(SolutionDir)..\..\Include\Depends\;$(SolutionDir)..\..\Include\Depends\Depends\;$(WindowsSDK_IncludePath);;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)..\..\lib\Depends\$(PlatformTarget)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
