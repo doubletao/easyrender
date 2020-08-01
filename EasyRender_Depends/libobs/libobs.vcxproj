@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E344201F-3568-4B7B-9B9F-AA933B3D7380}</ProjectGuid>
+    <RootNamespace>libobs</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)Depends\libobs\libobs\;$(SolutionDir)Include\;$(SolutionDir)Include\Depends\;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);E:\lanxindev\WTL91_5321_Final;E:\lanxindev\LanxinPublic\include;E:\lanxindev\LanxinPublic\include\boost_1_61_0;E:\lanxindev\LanxinPublic\include\Qt\Qt5.6.0;E:\lanxindev\LanxinPublic\include\cef\CEF_3.2623.1401.gb90a3be_windows32</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\$(PlatformTarget);$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;E:\lanxindev\LanxinPublic\lib;E:\lanxindev\LanxinPublic\lib\boost\1.61.0;E:\lanxindev\LanxinPublic\lib\Qt\Qt5.6.0\lib\windows\x86;E:\lanxindev\LanxinPublic\lib\CEF_3.2623.1401.gb90a3be_windows32</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)Depends\libobs\libobs\;$(SolutionDir)Include\;$(SolutionDir)Include\Depends\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\$(PlatformTarget);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)Depends\libobs\libobs\;$(SolutionDir)Include\;$(SolutionDir)Include\Depends\;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);E:\lanxindev\WTL91_5321_Final;E:\lanxindev\LanxinPublic\include;E:\lanxindev\LanxinPublic\include\boost_1_61_0;E:\lanxindev\LanxinPublic\include\Qt\Qt5.6.0;E:\lanxindev\LanxinPublic\include\cef\CEF_3.2623.1401.gb90a3be_windows32</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\$(PlatformTarget);$(VC_LibraryPath_x86);$(WindowsSdk_71A_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;E:\lanxindev\LanxinPublic\lib;E:\lanxindev\LanxinPublic\lib\boost\1.61.0;E:\lanxindev\LanxinPublic\lib\Qt\Qt5.6.0\lib\windows\x86;E:\lanxindev\LanxinPublic\lib\CEF_3.2623.1401.gb90a3be_windows32</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Depends\w32-pthreads\w32-pthreads\;$(SolutionDir)Depends\libobs\libobs\;$(SolutionDir)Include\;$(SolutionDir)Include\Depends\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)Lib\$(PlatformTarget);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\libobs.def</ModuleDefinitionFile>
+      <ImportLibrary>$(SolutionDir)Lib\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>shell32.lib;advapi32.lib;winmm.lib;psapi.lib;w32-pthreads.lib;jansson.lib;avformat.lib;avcodec.lib;avdevice.lib;avutil.lib;avfilter.lib;swscale.lib;swresample.lib;zlib.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\libobs.def</ModuleDefinitionFile>
+      <ImportLibrary>$(SolutionDir)Lib\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>shell32.lib;advapi32.lib;winmm.lib;psapi.lib;w32-pthreads.lib;jansson.lib;avformat.lib;avcodec.lib;avdevice.lib;avutil.lib;avfilter.lib;swscale.lib;swresample.lib;zlib.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\libobs.def</ModuleDefinitionFile>
+      <ImportLibrary>$(SolutionDir)Lib\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>shell32.lib;advapi32.lib;winmm.lib;psapi.lib;w32-pthreads.lib;jansson.lib;avformat.lib;avcodec.lib;avdevice.lib;avutil.lib;avfilter.lib;swscale.lib;swresample.lib;zlib.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\libobs.def</ModuleDefinitionFile>
+      <ImportLibrary>$(SolutionDir)Lib\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>shell32.lib;advapi32.lib;winmm.lib;psapi.lib;w32-pthreads.lib;jansson.lib;avformat.lib;avcodec.lib;avdevice.lib;avutil.lib;avfilter.lib;swscale.lib;swresample.lib;zlib.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libobs\graphics\axisang.c" />
+    <ClCompile Include="libobs\graphics\bounds.c" />
+    <ClCompile Include="libobs\graphics\effect-parser.c" />
+    <ClCompile Include="libobs\graphics\effect.c" />
+    <ClCompile Include="libobs\graphics\graphics-ffmpeg.c" />
+    <ClCompile Include="libobs\graphics\graphics-imports.c" />
+    <ClCompile Include="libobs\graphics\graphics.c" />
+    <ClCompile Include="libobs\graphics\image-file.c" />
+    <ClCompile Include="libobs\graphics\libnsgif\libnsgif.c" />
+    <ClCompile Include="libobs\graphics\math-extra.c" />
+    <ClCompile Include="libobs\graphics\matrix3.c" />
+    <ClCompile Include="libobs\graphics\matrix4.c" />
+    <ClCompile Include="libobs\graphics\plane.c" />
+    <ClCompile Include="libobs\graphics\quat.c" />
+    <ClCompile Include="libobs\graphics\shader-parser.c" />
+    <ClCompile Include="libobs\graphics\texture-render.c" />
+    <ClCompile Include="libobs\graphics\vec2.c" />
+    <ClCompile Include="libobs\graphics\vec3.c" />
+    <ClCompile Include="libobs\graphics\vec4.c" />
+    <ClCompile Include="libobs\util\array-serializer.c" />
+    <ClCompile Include="libobs\util\base.c" />
+    <ClCompile Include="libobs\util\bmem.c" />
+    <ClCompile Include="libobs\util\cf-lexer.c" />
+    <ClCompile Include="libobs\util\cf-parser.c" />
+    <ClCompile Include="libobs\util\config-file.c" />
+    <ClCompile Include="libobs\util\crc32.c" />
+    <ClCompile Include="libobs\util\dstr.c" />
+    <ClCompile Include="libobs\util\file-serializer.c" />
+    <ClCompile Include="libobs\util\lexer.c" />
+    <ClCompile Include="libobs\util\platform-windows.c" />
+    <ClCompile Include="libobs\util\platform.c" />
+    <ClCompile Include="libobs\util\profiler.c" />
+    <ClCompile Include="libobs\util\text-lookup.c" />
+    <ClCompile Include="libobs\util\threading-windows.c" />
+    <ClCompile Include="libobs\util\utf8.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libobs\graphics\axisang.h" />
+    <ClInclude Include="libobs\graphics\bounds.h" />
+    <ClInclude Include="libobs\graphics\effect-parser.h" />
+    <ClInclude Include="libobs\graphics\effect.h" />
+    <ClInclude Include="libobs\graphics\graphics-internal.h" />
+    <ClInclude Include="libobs\graphics\graphics.h" />
+    <ClInclude Include="libobs\graphics\half.h" />
+    <ClInclude Include="libobs\graphics\image-file.h" />
+    <ClInclude Include="libobs\graphics\input.h" />
+    <ClInclude Include="libobs\graphics\libnsgif\libnsgif.h" />
+    <ClInclude Include="libobs\graphics\math-defs.h" />
+    <ClInclude Include="libobs\graphics\math-extra.h" />
+    <ClInclude Include="libobs\graphics\matrix3.h" />
+    <ClInclude Include="libobs\graphics\matrix4.h" />
+    <ClInclude Include="libobs\graphics\plane.h" />
+    <ClInclude Include="libobs\graphics\quat.h" />
+    <ClInclude Include="libobs\graphics\shader-parser.h" />
+    <ClInclude Include="libobs\graphics\vec2.h" />
+    <ClInclude Include="libobs\graphics\vec3.h" />
+    <ClInclude Include="libobs\graphics\vec4.h" />
+    <ClInclude Include="libobs\util\array-serializer.h" />
+    <ClInclude Include="libobs\util\base.h" />
+    <ClInclude Include="libobs\util\bmem.h" />
+    <ClInclude Include="libobs\util\c99defs.h" />
+    <ClInclude Include="libobs\util\cf-lexer.h" />
+    <ClInclude Include="libobs\util\cf-parser.h" />
+    <ClInclude Include="libobs\util\circlebuf.h" />
+    <ClInclude Include="libobs\util\config-file.h" />
+    <ClInclude Include="libobs\util\crc32.h" />
+    <ClInclude Include="libobs\util\darray.h" />
+    <ClInclude Include="libobs\util\dstr.h" />
+    <ClInclude Include="libobs\util\file-serializer.h" />
+    <ClInclude Include="libobs\util\lexer.h" />
+    <ClInclude Include="libobs\util\pipe.h" />
+    <ClInclude Include="libobs\util\platform.h" />
+    <ClInclude Include="libobs\util\profiler.h" />
+    <ClInclude Include="libobs\util\profiler.hpp" />
+    <ClInclude Include="libobs\util\serializer.h" />
+    <ClInclude Include="libobs\util\sse-intrin.h" />
+    <ClInclude Include="libobs\util\text-lookup.h" />
+    <ClInclude Include="libobs\util\threading-windows.h" />
+    <ClInclude Include="libobs\util\threading.h" />
+    <ClInclude Include="libobs\util\utf8.h" />
+    <ClInclude Include="libobs\util\util_uint128.h" />
+    <ClInclude Include="libobs\util\util_uint64.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libobs.def" />
+    <None Include="res\libobs.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libobs.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

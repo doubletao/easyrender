@@ -5,3 +5,11 @@ tmp/
 *.iobj
 *.ipdb
 *.exp
+Build/Win/ipch/EASYRENDER_DATABASEDEFINE-34f92ada/EASYRENDER_DATABASEDEFINE-bdee837b.ipch
+/Lib/Depends/x64/json11.exp
+/Lib/Depends/x64/libobs.exp
+/Lib/Depends/x64/libobs-d3d11.exp
+/Lib/Depends/x64/libobs-opengl.exp
+/Lib/Depends/x64/w32-pthreads.exp
+/Lib/Depends/x64/glad.exp
+/Lib/Depends/x64/jansson.exp

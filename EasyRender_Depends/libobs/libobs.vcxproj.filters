@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="libobs">
+      <UniqueIdentifier>{60840a1e-b6ee-4531-baa1-1a551c9f0df3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libobs\graphics">
+      <UniqueIdentifier>{05df0a58-4aa4-401d-af88-f1bacccae3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libobs\util">
+      <UniqueIdentifier>{ada4e665-6f80-44a2-8a54-b39c8004755b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libobs\graphics\axisang.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\bounds.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\effect.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\effect-parser.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\graphics.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\graphics-ffmpeg.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\graphics-imports.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\image-file.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\math-extra.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\matrix3.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\matrix4.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\plane.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\quat.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\shader-parser.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\texture-render.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\vec2.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\vec3.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\vec4.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\graphics\libnsgif\libnsgif.c">
+      <Filter>libobs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\array-serializer.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\base.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\bmem.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\cf-lexer.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\cf-parser.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\config-file.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\crc32.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\dstr.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\file-serializer.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\lexer.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\platform.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\profiler.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\text-lookup.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\utf8.c">
+      <Filter>libobs\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\platform-windows.c">
+      <Filter>libobs</Filter>
+    </ClCompile>
+    <ClCompile Include="libobs\util\threading-windows.c">
+      <Filter>libobs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\axisang.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\bounds.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\effect.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\effect-parser.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\graphics.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\graphics-internal.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\half.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\image-file.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\input.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\math-defs.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\math-extra.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\matrix3.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\matrix4.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\plane.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\quat.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\shader-parser.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\vec2.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\vec3.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\vec4.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\graphics\libnsgif\libnsgif.h">
+      <Filter>libobs\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\array-serializer.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\base.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\bmem.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\c99defs.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\cf-lexer.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\cf-parser.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\circlebuf.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\config-file.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\crc32.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\darray.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\dstr.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\file-serializer.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\lexer.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\pipe.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\platform.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\profiler.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\profiler.hpp">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\serializer.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\sse-intrin.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\text-lookup.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\threading.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\utf8.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\util_uint64.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\util_uint128.h">
+      <Filter>libobs\util</Filter>
+    </ClInclude>
+    <ClInclude Include="libobs\util\threading-windows.h">
+      <Filter>libobs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libobs.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\libobs.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libobs.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
